@@ -53,6 +53,7 @@ a {
 ul,
 ol {
   list-style: none;
+  line-height: 1.6;
 }
 
 table {
@@ -1223,5 +1224,69 @@ body::after {
   }
   .hero-content .text p {
     font-size: 18px;
+  }
+}
+
+/* ----- FOOTER ----- */
+
+.footer {
+  margin-top: 60px;
+  padding: 10px 0;
+  background: rgba(5, 5, 5, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+}
+
+.footer-logo h3 {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-logo span {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-size: 16px;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-links a:hover {
+  color: var(--turquoise);
+  border-bottom: 1px solid var(--turquoise);
+  opacity: 1;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-logo h3 {
+    font-size: 22px;
   }
 }
