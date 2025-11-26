@@ -19,28 +19,28 @@ document.querySelectorAll(".nav a").forEach((link) =>
   })
 );
 
-const popup = document.getElementById("videoPopup");
-const frame = document.getElementById("videoFrame");
-const closeBtn = document.querySelector(".close-popup");
+// const popup = document.getElementById("videoPopup");
+// const frame = document.getElementById("videoFrame");
+// const closeBtn = document.querySelector(".close-popup");
 
-document.querySelectorAll(".play-btn").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    frame.src = btn.getAttribute("data-video") + "?autoplay=1";
-    popup.style.display = "flex";
-  });
-});
+// document.querySelectorAll(".play-btn").forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     frame.src = btn.getAttribute("data-video") + "?autoplay=1";
+//     popup.style.display = "flex";
+//   });
+// });
 
-closeBtn.addEventListener("click", () => {
-  popup.style.display = "none";
-  frame.src = "";
-});
+// closeBtn.addEventListener("click", () => {
+//   popup.style.display = "none";
+//   frame.src = "";
+// });
 
-popup.addEventListener("click", (e) => {
-  if (e.target === popup) {
-    popup.style.display = "none";
-    frame.src = "";
-  }
-});
+// popup.addEventListener("click", (e) => {
+//   if (e.target === popup) {
+//     popup.style.display = "none";
+//     frame.src = "";
+//   }
+// });
 
 const reviews = [
   "images/reviews/1.png",

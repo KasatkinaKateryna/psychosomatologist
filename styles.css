@@ -289,15 +289,17 @@ body::after {
   position: relative;
   padding-left: 22px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   font-family: var(--font-serif);
 }
 
 .glow-list li::before {
   content: "";
-  position: absolute;
-  left: 0;
-  top: 15px;
+  position: relative;
+  left: -8px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -465,9 +467,6 @@ body::after {
   }
   .hero-content .text p {
     font-size: 26px;
-  }
-  .glow-list li::before {
-    top: 8px;
   }
   .scroll-down {
     position: relative;
@@ -763,6 +762,15 @@ body::after {
   top: 0;
 }
 
+.meditation-card p {
+  font-size: 27px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--turquoise);
+  text-shadow: 0px 0px 12px #000;
+  z-index: 10;
+}
+
 .meditation-card::before {
   content: "";
   position: absolute;
@@ -815,9 +823,9 @@ body::after {
 .triangle {
   width: 0;
   height: 0;
-  border-left: 18px solid white;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
+  border-left: 14px solid white;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
 }
 
 /* POPUP */
@@ -1288,5 +1296,52 @@ body::after {
 
   .footer-logo h3 {
     font-size: 22px;
+  }
+}
+
+.telegram-section {
+  padding: 90px 0 0;
+  text-align: center;
+}
+
+.telegram-section ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.telegram-text {
+  max-width: 750px;
+  margin: 0 auto 35px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  line-height: 1.7;
+}
+
+.telegram-benefits {
+  margin: 35px auto;
+}
+
+.telegram-price {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(77, 210, 195, 0.6);
+}
+
+.telegram-section .btn {
+  margin: 30px auto 0;
+  width: max-content;
+}
+
+@media (max-width: 768px) {
+  .telegram-benefits {
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+  }
+  .telegram-text {
+    font-size: 1rem;
   }
 }
